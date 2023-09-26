@@ -1,0 +1,105 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+/* Sección de información de contacto */
+.contact-info {
+    flex: 1;
+    min-width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.info-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.info-title .fa {
+    font-size: 36px;
+    margin-right: 10px;
+}
+
+.info-items p {
+    margin: 10px 0;
+}
+
+/* Formulario de contacto */
+.contact-form {
+    flex: 2;
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.user-info label {
+    font-weight: bold;
+}
+
+.user-info input[type="text"],
+.user-info textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.user-info input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Estilos para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .contact-info {
+        min-width: 100%;
+        margin-bottom: 20px;
+    }
+    .contact-form {
+        padding: 15px;
+    }
+    .user-info input[type="submit"] {
+        width: 100%;
+    }
+}
+
+/* Imagen responsive */
+img {
+    max-width: 100%;
+    height: auto;
+}
